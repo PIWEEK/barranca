@@ -28,15 +28,15 @@ npm ci
 npm run dev   # http://localhost:5173
 ```
 
-Requisits: Node.js >= 18, npm (o pnpm/yarn).
+**Requisits**: Node.js >= 18, npm (o pnpm/yarn).
 
 ## Llicència
 Este projecte està baix la MIT License – vegeu el fitxer LICENSE per a més detalls.
 
 ## Contacte i suport
 
-Autor principal: Xavi (Frontend Developer) – [xavier.julian@kaleidos.net](mailto:xavier.julian@kaleidos.net)
-Font original: [Benjajaja](https://github.com/benjajaja/dana-timeline)
-Issues: Obrir un issue al repositori per a bugs o sol·licituds de funcionalitat.
+- Autor principal: Xavi (Frontend Developer) – [xavier.julian@kaleidos.net](mailto:xavier.julian@kaleidos.net)
+- Font original: [Benjajaja](https://github.com/benjajaja/dana-timeline)
+- Issues: Obrir un issue al repositori per a bugs o sol·licituds de funcionalitat.
 
 Esperem que esta ferramenta ajude a comprendre millor la cronologia i les responsabilitats de la DANA de València. Si tens suggeriments o vols col·laborar, no dubtes a fer-ho!

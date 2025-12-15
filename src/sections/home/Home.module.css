@@ -1,0 +1,44 @@
+.home {
+  inline-size: 100%;
+  block-size: 100dvh;
+  clip-path: polygon(100% 0, 100% 89%, 19% 100%, 0 100%, 0 0);
+  overflow: hidden;
+
+  &::after {
+    content: " ";
+    position: absolute;
+    top: 0; 
+    left: 0;
+    width: 100%; 
+    height: 100dvh;
+    opacity: .4; 
+    background-image: url(../../assets/decorative/senyera.jpg);
+    background-repeat: no-repeat;
+    background-position: 45% center;
+    z-index:-1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce), (max-width: 768px) {
+  .home::after {
+    animation: none;
+  }
+}
+
+@media (width >= 768px) {
+  .home {
+    clip-path: polygon(100% 0, 100% 83%, 29% 100%, 0 100%, 0 0);
+    &:after {
+      animation: zoomIn 15s ease-in-out infinite alternate;
+    }
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    background-size: 120%;
+  }
+  to {
+    background-size: 130%;
+  }
+}

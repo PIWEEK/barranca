@@ -1,0 +1,612 @@
+[
+  {
+    "id": "event-001",
+    "title": "Assaig de l'ES-Alert a la Vega Baixa",
+    "authors": [
+      "Generalitat",
+      "Govern central"
+    ],
+    "category": "general",
+    "type": "info",
+    "verified": true,
+    "references": [
+      {
+        "url": "https://www.eldiario.es/comunitat-valenciana/comarcas/generalitat-gobierno-ensayan-vega-baja-sistema-1-1-2-mensajes-masivos-emergencia-inundaciones_1_10177444.html",
+        "source": "El Diario",
+        "type": "article"
+      },
+      {
+        "url": "https://valenciaplaza.com/valenciaplaza/comunitat-valenciana1/emergencias-barajaba-un-primer-mensaje-del-es-alert-desde-hora-y-media-antes-de-enviarlo",
+        "source": "Valencia Plaza",
+        "type": "article"
+      }
+    ],
+    "content": "27 municipis de la Vega Baixa van provar el sistema ES-Alert amb missatges d'emergència per inundacions en castellà i anglés. L'assaig va funcionar segons el tècnic Miguel Mollá, però no es va repetir malgrat la recomanació anual.",
+    "time": "2023-05-04 00:00"
+  },
+  {
+    "id": "event-002",
+    "title": "Primer avís de DANA aproximant-se",
+    "authors": [
+      "AEMET"
+    ],
+    "category": "meteorology",
+    "type": "warning",
+    "verified": true,
+    "references": [
+      {
+        "url": "https://aemetblog.es/2025/12/10/avisos-vs-alertas-por-que-existe-esta-dualidad-y-en-que-consiste/",
+        "source": "AEMET Blog",
+        "type": "article"
+      }
+    ],
+    "content": "AEMET emet el primer avís d'una DANA que s'acostarà a la Comunitat Valenciana en els pròxims dies.",
+    "time": "2024-10-24 12:00"
+  },
+  {
+    "id": "event-003",
+    "title": "Primera nota informativa oficial d'AEMET",
+    "authors": [
+      "AEMET"
+    ],
+    "category": "meteorology",
+    "type": "info",
+    "verified": false,
+    "references": [],
+    "content": "Publicació de la primera nota oficial sobre el fenomen meteorològic previst.",
+    "time": "2024-10-25 10:00"
+  },
+  {
+    "id": "event-004",
+    "title": "AEMET anuncia el “día àlgid” per al 29 d'octubre",
+    "authors": [
+      "AEMET"
+    ],
+    "category": "meteorology",
+    "type": "warning",
+    "verified": true,
+    "references": [
+      {
+        "url": "https://maldita.es/malditobulo/20241101/dana-aemet-no-predijo/",
+        "source": "Maldita.es",
+        "type": "article"
+      }
+    ],
+    "content": "S'identifica el 29 d'octubre com el dia de màxima intensitat, amb previsió de superar els 150 l/m² en 24 h en parts de València i Múrcia.",
+    "time": "2024-10-27 12:00"
+  },
+  {
+    "id": "event-005",
+    "title": "Avís especial nº 16/2024 d'AEMET",
+    "authors": [
+      "AEMET"
+    ],
+    "category": "meteorology",
+    "type": "warning",
+    "verified": true,
+    "references": [
+      {
+        "url": "https://www.publico.es/sociedad/informe-aemet-sobre-dana-valencia-desmonta-version-mazon.html",
+        "source": "Público",
+        "type": "article"
+      }
+    ],
+    "content": "Previsió de 120-150 mm en 12-24 h per a la província de València; es reitera el “dia àlgid” del 29 oct.",
+    "time": "2024-10-28 10:00"
+  },
+  {
+    "id": "event-006",
+    "title": "La Universitat de València suspén classes",
+    "authors": [
+      "Universitat de València"
+    ],
+    "category": "general",
+    "type": "info",
+    "verified": false,
+    "references": [],
+    "content": "Es cancel·len les classes presencials per a l'endemà (29 oct).",
+    "time": "2024-10-28 23:06"
+  },
+  {
+    "id": "event-007",
+    "title": "AVÍS ROIG per a l'interior nord de València",
+    "authors": [
+      "AEMET"
+    ],
+    "category": "meteorology",
+    "type": "error",
+    "verified": true,
+    "references": [
+      {
+        "url": "./images/aemet_aviso_rojo.png",
+        "source": "Image",
+        "type": "image"
+      }
+    ],
+    "content": "Activat l'avís roig per pluges torrencials a l'interior nord de la província.",
+    "time": "2024-10-29 07:31"
+  },
+  {
+    "id": "event-008",
+    "title": "AVÍS ROIG ampliat al litoral nord (àrea metropolitana)",
+    "authors": [
+      "AEMET"
+    ],
+    "category": "meteorology",
+    "type": "error",
+    "verified": false,
+    "references": [],
+    "content": "Extensió de l'avís roig al litoral nord, inclosa l'àrea metropolitana i l'Horta Sud.",
+    "time": "2024-10-29 07:36"
+  },
+  {
+    "id": "event-009",
+    "title": "AEMET alerta a xarxes socials: pluges > 90 l/m²",
+    "authors": [
+      "AEMET"
+    ],
+    "category": "meteorology",
+    "type": "warning",
+    "verified": false,
+    "references": [],
+    "content": "Publicació a X indicant precipitacions superiors a 90 l/m².",
+    "time": "2024-10-29 08:04"
+  },
+  {
+    "id": "event-010",
+    "title": "Mazón demana “prudència en carreteres”",
+    "authors": [
+      "Carlos Mazón"
+    ],
+    "category": "politics",
+    "type": "info",
+    "verified": false,
+    "references": [],
+    "content": "El president del Consell insta la ciutadania a conduir amb cautela.",
+    "time": "2024-10-29 08:53"
+  },
+  {
+    "id": "event-011",
+    "title": "Mazón presideix el Ple del Consell",
+    "authors": [
+      "Carlos Mazón"
+    ],
+    "category": "politics",
+    "type": "info",
+    "verified": false,
+    "references": [],
+    "content": "El president dirigeix la sessió ordinària sense modificar l'agenda.",
+    "time": "2024-10-29 09:00"
+  },
+  {
+    "id": "event-012",
+    "title": "AEMET: “El perill és extrem!”",
+    "authors": [
+      "AEMET"
+    ],
+    "category": "meteorology",
+    "type": "warning",
+    "verified": false,
+    "references": [],
+    "content": "Missatge a xarxes emfatitzant la gravetat del fenomen.",
+    "time": "2024-10-29 09:20"
+  },
+  {
+    "id": "event-013",
+    "title": "AEMET informa a Emergències: “tira cap a l'interior”",
+    "authors": [
+      "AEMET",
+      "Suárez"
+    ],
+    "category": "meteorology",
+    "type": "info",
+    "verified": false,
+    "references": [],
+    "content": "Es comunica que la tempesta es desplaça cap a la Serrania de Conca.",
+    "time": "2024-10-29 09:43"
+  },
+  {
+    "id": "event-014",
+    "title": "Mazón presideix acte de certificat turístic AENOR",
+    "authors": [
+      "Carlos Mazón"
+    ],
+    "category": "politics",
+    "type": "info",
+    "verified": true,
+    "references": [
+      {
+        "url": "https://maldita.es/malditateexplica/20251031/comida-trabajo-carlos-mazon-dana-valencia/",
+        "source": "Maldita.es",
+        "type": "article"
+      }
+    ],
+    "content": "El president assisteix a una cerimònia aliena a la DANA.",
+    "time": "2024-10-29 11:00"
+  },
+  {
+    "id": "event-015",
+    "title": "Emergències confirma amb AEMET: evolució cap a Conca",
+    "authors": [
+      "AEMET",
+      "Suárez"
+    ],
+    "category": "meteorology",
+    "type": "info",
+    "verified": false,
+    "references": [],
+    "content": "Confirmació de la trajectòria de la pluja cap a la conca del riu Conca.",
+    "time": "2024-10-29 11:26"
+  },
+  {
+    "id": "event-016",
+    "title": "Alerta hidrològica en riu Magre",
+    "authors": [
+      "Suárez"
+    ],
+    "category": "meteorology",
+    "type": "warning",
+    "verified": false,
+    "references": [],
+    "content": "Emergències decreta alerta hidrològica en el riu Magre.",
+    "time": "2024-10-29 11:45"
+  },
+  {
+    "id": "event-017",
+    "title": "Luis Gomis ofereix agents mediambientals - SENSE RESPOSTA",
+    "authors": [
+      "Jueza",
+      "Generalitat"
+    ],
+    "category": "general",
+    "type": "warning",
+    "verified": true,
+    "references": [
+      {
+        "url": "https://elpais.com/espana/comunidad-valenciana/2025-04-15/la-generalitat-reconoce-a-la-jueza-que-tenia-que-vigilar-el-cauce-del-barranco-del-poyo.html",
+        "source": "El País",
+        "type": "article"
+      }
+    ],
+    "content": "El director del Medi Natural ofereix recursos per al seguiment de cabals, però l'Agència de Seguretat no respon.",
+    "time": "2024-10-29 11:54"
+  },
+  {
+    "id": "event-018",
+    "title": "CHJ avisa d'enorme cabal en rius i barrancs",
+    "authors": [
+      "Cebellán",
+      "Suárez"
+    ],
+    "category": "emergency_response",
+    "type": "warning",
+    "verified": true,
+    "references": [
+      {
+        "url": "https://www.rtve.es/noticias/20241031/cronologia-dana-12-horas-alerta-movil/16311521.shtml",
+        "source": "RTVE",
+        "type": "article"
+      }
+    ],
+    "content": "La Confederació Hidrogràfica del Xúquer informa de cabals anòmals.",
+    "time": "2024-10-29 11:55"
+  },
+  {
+    "id": "event-019",
+    "title": "Mazón compareix en roda de premsa - “es reduirà a les 18 h”",
+    "authors": [
+      "Carlos Mazón"
+    ],
+    "category": "politics",
+    "type": "info",
+    "verified": true,
+    "references": [
+      {
+        "url": "https://elpais.com/videos/2024/10/31/el-video-en-el-presidente-valenciano-auguro-la-disminucion-del-temporal-y-que-borro-de-su-twitter.html?utm_source=chatgpt.com",
+        "source": "El País",
+        "type": "article"
+      }
+    ],
+    "content": "El president assegura que el temporal disminuirà al voltant de les 18 h.",
+    "time": "2024-10-29 12:00"
+  },
+  {
+    "id": "event-020",
+    "title": "Alerta hidrològica en barranc del Poio",
+    "authors": [
+      "Suárez"
+    ],
+    "category": "meteorology",
+    "type": "warning",
+    "verified": true,
+    "references": [
+      {
+        "url": "./images/emergencias_alerta_poyo.png",
+        "source": "Image",
+        "type": "image"
+      }
+    ],
+    "content": "Emergències declara alerta en el barranc del Poio, zona que més tard causaria la majoria de morts.",
+    "time": "2024-10-29 12:20"
+  },
+  {
+    "id": "event-021",
+    "title": "Primera telefonada Pradas-Bernabé",
+    "authors": [
+      "Pradas",
+      "Bernabé"
+    ],
+    "category": "communication",
+    "type": "info",
+    "verified": false,
+    "references": [],
+    "content": "Conversa de 5 min entre la consellera i la delegada del Govern.",
+    "time": "2024-10-29 12:23"
+  },
+  {
+    "id": "event-022",
+    "title": "Bernabé ofereix la UME a Pradas",
+    "authors": [
+      "Bernabé",
+      "Pradas"
+    ],
+    "category": "general",
+    "type": "info",
+    "verified": false,
+    "references": [],
+    "content": "Oferta d'activació de la Unitat Militar d'Emergències per a la comarca.",
+    "time": "2024-10-29 12:30"
+  },
+  {
+    "id": "event-023",
+    "title": "Ordre a bombers forestals de vigilar el Poio",
+    "authors": [
+      "Basset"
+    ],
+    "category": "general",
+    "type": "info",
+    "verified": false,
+    "references": [],
+    "content": "S'ordena vigilància del barranc del Poio i del riu Magre; l'ordre serà retirada a les 15:00 sense explicació.",
+    "time": "2024-10-29 12:48"
+  },
+  {
+    "id": "event-024",
+    "title": "Pradas intenta telefonar Mazón - TELEFONADA CANCEL·LADA",
+    "authors": [
+      "Pradas",
+      "Mazón"
+    ],
+    "category": "politics",
+    "type": "warning",
+    "verified": false,
+    "references": [],
+    "content": "Intent de contacte que no es completa.",
+    "time": "2024-10-29 12:52"
+  },
+  {
+    "id": "event-025",
+    "title": "Pradas telefona a Cuenca (cap de gabinet) - CANCEL·LADA",
+    "authors": [
+      "Pradas",
+      "Cuenca"
+    ],
+    "category": "general",
+    "type": "warning",
+    "verified": false,
+    "references": [],
+    "content": "Un altre intent de telefonada que no es concreta.",
+    "time": "2024-10-29 12:53"
+  },
+  {
+    "id": "event-026",
+    "title": "Compareixença pública de Mazón - “falta d'informació”",
+    "authors": [
+      "Carlos Mazón"
+    ],
+    "category": "politics",
+    "type": "lie",
+    "verified": true,
+    "references": [
+      {
+        "url": "https://maldita.es/malditateexplica/20251031/comida-trabajo-carlos-mazon-dana-valencia/",
+        "source": "Maldita.es",
+        "type": "article"
+      }
+    ],
+    "content": "Mazón afirma que no hi havia informació suficient, malgrat els nombrosos missatges rebuts prèviament.",
+    "time": "2024-10-29 13:00"
+  },
+  {
+    "id": "event-027",
+    "title": "Mazón publica tuit amb vídeo de la compareixença",
+    "authors": [
+      "Carlos Mazón"
+    ],
+    "category": "politics",
+    "type": "info",
+    "verified": true,
+    "references": [
+      {
+        "url": "https://elpais.com/videos/2024/10/31/el-video-en-el-presidente-valenciano-auguro-la-disminucion-del-temporal-y-que-borro-de-su-twitter.html?utm_source=chatgpt.com",
+        "source": "El País",
+        "type": "article"
+      }
+    ],
+    "content": "Difusió del vídeo on assegura que el temporal disminuiria a les 18 h.",
+    "time": "2024-10-29 13:14"
+  },
+  {
+    "id": "event-028",
+    "title": "1 Mort",
+    "authors": [],
+    "category": "casualties",
+    "type": "fatal",
+    "verified": false,
+    "references": [],
+    "content": "Primera defunció confirmada.",
+    "time": "2024-10-29 13:19"
+  },
+  {
+    "id": "event-029",
+    "title": "Pradas informa a Mazón - Ribera Alta, barranc del Poio i riu Magre",
+    "authors": [
+      "Pradas"
+    ],
+    "category": "politics",
+    "type": "info",
+    "verified": false,
+    "references": [],
+    "content": "Detall dels punts crítics de la zona.",
+    "time": "2024-10-29 13:34"
+  },
+  {
+    "id": "event-030",
+    "title": "“La cosa es complica a Utiel” (Pradas → Mazón)",
+    "authors": [
+      "Pradas",
+      "Mazón"
+    ],
+    "category": "politics",
+    "type": "warning",
+    "verified": true,
+    "references": [
+      {
+        "url": "./images/cojonudo.avif",
+        "source": "Image",
+        "type": "image"
+      }
+    ],
+    "content": "Pradas adverteix el president sobre la situació crítica a Utiel.",
+    "time": "2024-10-29 14:11"
+  },
+  {
+    "id": "event-031",
+    "title": "À Punt connecta en directe amb alcalde de Utiel - “situació crítica, dantesca”",
+    "authors": [
+      "Ricardo Gabaldón"
+    ],
+    "category": "general",
+    "type": "warning",
+    "verified": false,
+    "references": [],
+    "content": "L'alcalde descriu la inundació com a “molt crítica, dantesca”.",
+    "time": "2024-10-29 14:14"
+  },
+  {
+    "id": "event-032",
+    "title": "Mazón arriba sol a El Ventorro (sense escorta)",
+    "authors": [
+      "Jueza",
+      "Mazón",
+      "Romero"
+    ],
+    "category": "politics",
+    "type": "info",
+    "verified": true,
+    "references": [
+      {
+        "url": "./images/el-tractor.jpg",
+        "source": "Image",
+        "type": "image"
+      }
+    ],
+    "content": "El president arriba al restaurant sense escorta, segons l'amo del restaurant.",
+    "time": "2024-10-29 14:15"
+  },
+  {
+    "id": "event-033",
+    "title": "Salomé Pradas publica “emergència hidrològica” a Twitter",
+    "authors": [
+      "Pradas"
+    ],
+    "category": "emergency_response",
+    "type": "info",
+    "verified": true,
+    "references": [
+      {
+        "url": "./images/salome_pradas_tweet_emergencia_hidrologica.jpg",
+        "source": "Image",
+        "type": "image"
+      }
+    ],
+    "content": "",
+    "time": "2024-10-29 14:20"
+  },
+  {
+    "id": "event-034",
+    "title": "“La cosa es complica a Utiel” (Pradas → Cuenca)",
+    "authors": [
+      "Pradas",
+      "Cuenca"
+    ],
+    "category": "general",
+    "type": "warning",
+    "verified": true,
+    "references": [
+      {
+        "url": "./images/cuenca_pradas_1425.jpg",
+        "source": "Image",
+        "type": "image"
+      }
+    ],
+    "content": "Pradas avisa al cap de gabinet de la gravetat a Utiel.",
+    "time": "2024-10-29 14:25"
+  },
+  {
+    "id": "event-035",
+    "title": "Xat intern Generalitat - “els barrancs estan a punt de col·lapsar”",
+    "authors": [
+      "Emilio Argüeso",
+      "Susana Camarero"
+    ],
+    "category": "communication",
+    "type": "warning",
+    "verified": false,
+    "references": [],
+    "content": "S'adverteix internament del risc imminent de col·lapse dels barrancs.",
+    "time": "2024-10-29 14:44"
+  },
+  {
+    "id": "event-036",
+    "title": "Vilaplana arriba a El Ventorro",
+    "authors": [
+      "Vilaplana",
+      "Romero"
+    ],
+    "category": "general",
+    "type": "info",
+    "verified": false,
+    "references": [],
+    "content": "La periodista arriba al restaurant 30-40 min després que Mazón.",
+    "time": "2024-10-29 14:50"
+  },
+  {
+    "id": "event-037",
+    "title": "Mazón hauria dinat amb Salvador Navarro (patronal)",
+    "authors": [
+      "Mazón",
+      "Salvador Navarro"
+    ],
+    "category": "politics",
+    "type": "lie",
+    "verified": false,
+    "references": [],
+    "content": "Afirmació falsa; Navarro va desmentir haver dinat amb Mazón.",
+    "time": "2024-10-29 15:00"
+  },
+  {
+    "id": "event-038",
+    "title": "AEMET informa a Emergències: el pitjor vindrà a la vesprada",
+    "authors": [
+      "AEMET",
+      "Suárez"
+    ],
+    "category": "meteorology",
+    "type": "warning",
+    "verified": false,
+    "references": [],
+    "content": "S'avisa que les precipitacions més intenses arribaran a la vesprada.",
+    "time": "2024-10-29 15:00"
+  }
+]

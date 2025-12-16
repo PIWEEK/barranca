@@ -1,0 +1,6 @@
+.timeline {
+  height: 100dvh; /* full viewport height */
+  overflow-y: auto; /* vertical scroll */
+  scroll-snap-type: y mandatory; /* y‑axis snapping, mandatory = always snap */
+  scroll-behavior: smooth; /* nice easing when you click nav links */
+}

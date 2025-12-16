@@ -18,7 +18,7 @@
     width: 100%;
     height: 100dvh;
     opacity: 0.4;
-    background-image: url('./assets/senyera.jpg');
+    background-image: url('./assets/senyera02.webp');
     background-repeat: no-repeat;
     background-position: 45% center;
     background-size: cover;
@@ -63,15 +63,15 @@
 
 @media (--motionOK) and (--md-n-above) {
   .hero::after {
-    animation: zoomIn 15s ease-in-out infinite alternate;
+    animation: zoomIn 20s ease-in-out infinite alternate;
   }
 }
 
 @keyframes zoomIn {
   from {
-    background-size: 120%;
+    background-size: 140%;
   }
   to {
-    background-size: 150%;
+    background-size: 160%;
   }
 }

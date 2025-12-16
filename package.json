@@ -25,6 +25,7 @@
     "eslint-plugin-react-refresh": "^0.4.24",
     "globals": "^16.5.0",
     "open-props": "^1.7.17",
+    "postcss-custom-media": "^11.0.6",
     "postcss-jit-props": "^1.0.16",
     "typescript": "~5.9.3",
     "typescript-eslint": "^8.46.4",

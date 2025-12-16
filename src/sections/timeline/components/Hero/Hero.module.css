@@ -1,4 +1,5 @@
 @import 'open-props/fonts';
+@import 'open-props/media';
 
 .hero {
   block-size: 100dvh;
@@ -20,7 +21,6 @@
     background-image: url('./assets/senyera.jpg');
     background-repeat: no-repeat;
     background-position: 45% center;
-    background-size: cover;
     z-index: -1;
   }
 }
@@ -38,6 +38,7 @@
 .title {
   text-transform: uppercase;
   font-weight: var(--font-weight-8);
+  font-size: var(--font-size-6);
 }
 
 .description {
@@ -45,22 +46,23 @@
   border-inline-start: var(--border-size-1) solid var(--gray-1);
 }
 
-@media (prefers-reduced-motion: reduce), (max-width: 768px) {
-  .hero::after {
-    animation: none;
-  }
-}
-
-@media (width >= 768px) {
+@media (--md-n-above) {
   .hero {
     clip-path: polygon(100% 0, 100% 83%, 29% 100%, 0 100%, 0 0);
-    &::after {
-      animation: zoomIn 15s ease-in-out infinite alternate;
-    }
   }
 
   .intro {
     max-inline-size: 32rem;
+  }
+
+  .title {
+    font-size: var(--font-size-8);
+  }
+}
+
+@media (--motionOK) {
+  .hero::after {
+    animation: zoomIn 15s ease-in-out infinite alternate;
   }
 }
 
@@ -69,6 +71,6 @@
     background-size: 120%;
   }
   to {
-    background-size: 130%;
+    background-size: 150%;
   }
 }

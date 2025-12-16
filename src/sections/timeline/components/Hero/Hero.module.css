@@ -1,34 +1,38 @@
-.home {
-  inline-size: 100%;
+.hero {
   block-size: 100dvh;
   clip-path: polygon(100% 0, 100% 89%, 19% 100%, 0 100%, 0 0);
   overflow: hidden;
+  position: relative;
+  background-clip: content-box;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
 
   &::after {
-    content: " ";
+    content: ' ';
     position: absolute;
-    top: 0; 
+    top: 0;
     left: 0;
-    width: 100%; 
+    width: 100%;
     height: 100dvh;
-    opacity: .4; 
-    background-image: url(../../assets/decorative/senyera.jpg);
+    opacity: 0.4;
+    background-image: url('./assets/senyera.jpg');
     background-repeat: no-repeat;
     background-position: 45% center;
-    z-index:-1;
+    background-size: cover;
+    z-index: -1;
   }
 }
 
 @media (prefers-reduced-motion: reduce), (max-width: 768px) {
-  .home::after {
+  .hero::after {
     animation: none;
   }
 }
 
 @media (width >= 768px) {
-  .home {
+  .hero {
     clip-path: polygon(100% 0, 100% 83%, 29% 100%, 0 100%, 0 0);
-    &:after {
+    &::after {
       animation: zoomIn 15s ease-in-out infinite alternate;
     }
   }

@@ -8,16 +8,24 @@
   flex-direction: column;
   text-align: end;
   gap: 0.25rem;
-  color: var(--red-6);
+  overflow: hidden;
 }
 
 .date {
   font-size: 1.1rem;
+  display: block;
+  overflow: hidden;
 }
 
 .time {
   font-size: 1.5rem;
   font-weight: bold;
+  display: block;
+  overflow: hidden;
+}
+
+.char {
+  display: inline-block;
 }
 
 .warning {

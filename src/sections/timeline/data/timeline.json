@@ -2,10 +2,7 @@
   {
     "id": "event-001",
     "title": "Assaig de l'ES-Alert a la Vega Baixa",
-    "authors": [
-      "Generalitat",
-      "Govern central"
-    ],
+    "actors": ["generalitat"],
     "category": "general",
     "type": "info",
     "verified": true,
@@ -27,9 +24,7 @@
   {
     "id": "event-002",
     "title": "Primer avís de DANA aproximant-se",
-    "authors": [
-      "AEMET"
-    ],
+    "actors": ["aemet"],
     "category": "meteorology",
     "type": "warning",
     "verified": true,
@@ -46,9 +41,7 @@
   {
     "id": "event-003",
     "title": "Primera nota informativa oficial d'AEMET",
-    "authors": [
-      "AEMET"
-    ],
+    "actors": ["aemet"],
     "category": "meteorology",
     "type": "info",
     "verified": false,
@@ -59,9 +52,7 @@
   {
     "id": "event-004",
     "title": "AEMET anuncia el “día àlgid” per al 29 d'octubre",
-    "authors": [
-      "AEMET"
-    ],
+    "actors": ["aemet"],
     "category": "meteorology",
     "type": "warning",
     "verified": true,
@@ -78,9 +69,7 @@
   {
     "id": "event-005",
     "title": "Avís especial nº 16/2024 d'AEMET",
-    "authors": [
-      "AEMET"
-    ],
+    "actors": ["aemet"],
     "category": "meteorology",
     "type": "warning",
     "verified": true,
@@ -97,9 +86,7 @@
   {
     "id": "event-006",
     "title": "La Universitat de València suspén classes",
-    "authors": [
-      "Universitat de València"
-    ],
+    "actors": ["universitat-valencia"],
     "category": "general",
     "type": "info",
     "verified": false,
@@ -110,9 +97,7 @@
   {
     "id": "event-007",
     "title": "AVÍS ROIG per a l'interior nord de València",
-    "authors": [
-      "AEMET"
-    ],
+    "actors": ["aemet"],
     "category": "meteorology",
     "type": "error",
     "verified": true,
@@ -129,9 +114,7 @@
   {
     "id": "event-008",
     "title": "AVÍS ROIG ampliat al litoral nord (àrea metropolitana)",
-    "authors": [
-      "AEMET"
-    ],
+    "actors": ["aemet"],
     "category": "meteorology",
     "type": "error",
     "verified": false,
@@ -142,9 +125,7 @@
   {
     "id": "event-009",
     "title": "AEMET alerta a xarxes socials: pluges > 90 l/m²",
-    "authors": [
-      "AEMET"
-    ],
+    "actors": ["aemet"],
     "category": "meteorology",
     "type": "warning",
     "verified": false,
@@ -155,9 +136,7 @@
   {
     "id": "event-010",
     "title": "Mazón demana “prudència en carreteres”",
-    "authors": [
-      "Carlos Mazón"
-    ],
+    "actors": ["carlos-mazon"],
     "category": "politics",
     "type": "info",
     "verified": false,
@@ -168,9 +147,7 @@
   {
     "id": "event-011",
     "title": "Mazón presideix el Ple del Consell",
-    "authors": [
-      "Carlos Mazón"
-    ],
+    "actors": ["carlos-mazon"],
     "category": "politics",
     "type": "info",
     "verified": false,
@@ -181,9 +158,7 @@
   {
     "id": "event-012",
     "title": "AEMET: “El perill és extrem!”",
-    "authors": [
-      "AEMET"
-    ],
+    "actors": ["aemet"],
     "category": "meteorology",
     "type": "warning",
     "verified": false,
@@ -194,10 +169,7 @@
   {
     "id": "event-013",
     "title": "AEMET informa a Emergències: “tira cap a l'interior”",
-    "authors": [
-      "AEMET",
-      "Suárez"
-    ],
+    "actors": ["aemet", "suarez"],
     "category": "meteorology",
     "type": "info",
     "verified": false,
@@ -208,9 +180,7 @@
   {
     "id": "event-014",
     "title": "Mazón presideix acte de certificat turístic AENOR",
-    "authors": [
-      "Carlos Mazón"
-    ],
+    "actors": ["carlos-mazon"],
     "category": "politics",
     "type": "info",
     "verified": true,
@@ -227,10 +197,7 @@
   {
     "id": "event-015",
     "title": "Emergències confirma amb AEMET: evolució cap a Conca",
-    "authors": [
-      "AEMET",
-      "Suárez"
-    ],
+    "actors": ["aemet", "suarez"],
     "category": "meteorology",
     "type": "info",
     "verified": false,
@@ -241,9 +208,7 @@
   {
     "id": "event-016",
     "title": "Alerta hidrològica en riu Magre",
-    "authors": [
-      "Suárez"
-    ],
+    "actors": ["suarez"],
     "category": "meteorology",
     "type": "warning",
     "verified": false,
@@ -254,10 +219,7 @@
   {
     "id": "event-017",
     "title": "Luis Gomis ofereix agents mediambientals - SENSE RESPOSTA",
-    "authors": [
-      "Jueza",
-      "Generalitat"
-    ],
+    "actors": ["jueza", "generalitat"],
     "category": "general",
     "type": "warning",
     "verified": true,
@@ -274,10 +236,7 @@
   {
     "id": "event-018",
     "title": "CHJ avisa d'enorme cabal en rius i barrancs",
-    "authors": [
-      "Cebellán",
-      "Suárez"
-    ],
+    "actors": ["cebellan", "suarez"],
     "category": "emergency_response",
     "type": "warning",
     "verified": true,
@@ -294,9 +253,7 @@
   {
     "id": "event-019",
     "title": "Mazón compareix en roda de premsa - “es reduirà a les 18 h”",
-    "authors": [
-      "Carlos Mazón"
-    ],
+    "actors": ["carlos-mazon"],
     "category": "politics",
     "type": "info",
     "verified": true,
@@ -313,9 +270,7 @@
   {
     "id": "event-020",
     "title": "Alerta hidrològica en barranc del Poio",
-    "authors": [
-      "Suárez"
-    ],
+    "actors": ["suarez"],
     "category": "meteorology",
     "type": "warning",
     "verified": true,
@@ -332,10 +287,7 @@
   {
     "id": "event-021",
     "title": "Primera telefonada Pradas-Bernabé",
-    "authors": [
-      "Pradas",
-      "Bernabé"
-    ],
+    "actors": ["salome-pradas", "bernabe"],
     "category": "communication",
     "type": "info",
     "verified": false,
@@ -346,10 +298,7 @@
   {
     "id": "event-022",
     "title": "Bernabé ofereix la UME a Pradas",
-    "authors": [
-      "Bernabé",
-      "Pradas"
-    ],
+    "actors": ["bernabe", "salome-pradas"],
     "category": "general",
     "type": "info",
     "verified": false,
@@ -360,9 +309,7 @@
   {
     "id": "event-023",
     "title": "Ordre a bombers forestals de vigilar el Poio",
-    "authors": [
-      "Basset"
-    ],
+    "actors": ["basset"],
     "category": "general",
     "type": "info",
     "verified": false,
@@ -373,10 +320,7 @@
   {
     "id": "event-024",
     "title": "Pradas intenta telefonar Mazón - TELEFONADA CANCEL·LADA",
-    "authors": [
-      "Pradas",
-      "Mazón"
-    ],
+    "actors": ["salome-pradas", "carlos-mazon"],
     "category": "politics",
     "type": "warning",
     "verified": false,
@@ -387,10 +331,7 @@
   {
     "id": "event-025",
     "title": "Pradas telefona a Cuenca (cap de gabinet) - CANCEL·LADA",
-    "authors": [
-      "Pradas",
-      "Cuenca"
-    ],
+    "actors": ["salome-pradas", "cuenca"],
     "category": "general",
     "type": "warning",
     "verified": false,
@@ -401,9 +342,7 @@
   {
     "id": "event-026",
     "title": "Compareixença pública de Mazón - “falta d'informació”",
-    "authors": [
-      "Carlos Mazón"
-    ],
+    "actors": ["carlos-mazon"],
     "category": "politics",
     "type": "lie",
     "verified": true,
@@ -420,9 +359,7 @@
   {
     "id": "event-027",
     "title": "Mazón publica tuit amb vídeo de la compareixença",
-    "authors": [
-      "Carlos Mazón"
-    ],
+    "actors": ["carlos-mazon"],
     "category": "politics",
     "type": "info",
     "verified": true,
@@ -439,7 +376,7 @@
   {
     "id": "event-028",
     "title": "1 Mort",
-    "authors": [],
+    "actors": [],
     "category": "casualties",
     "type": "fatal",
     "verified": false,
@@ -450,9 +387,7 @@
   {
     "id": "event-029",
     "title": "Pradas informa a Mazón - Ribera Alta, barranc del Poio i riu Magre",
-    "authors": [
-      "Pradas"
-    ],
+    "actors": ["salome-pradas"],
     "category": "politics",
     "type": "info",
     "verified": false,
@@ -463,10 +398,7 @@
   {
     "id": "event-030",
     "title": "“La cosa es complica a Utiel” (Pradas → Mazón)",
-    "authors": [
-      "Pradas",
-      "Mazón"
-    ],
+    "actors": ["salome-pradas", "carlos-mazon"],
     "category": "politics",
     "type": "warning",
     "verified": true,
@@ -483,9 +415,7 @@
   {
     "id": "event-031",
     "title": "À Punt connecta en directe amb alcalde de Utiel - “situació crítica, dantesca”",
-    "authors": [
-      "Ricardo Gabaldón"
-    ],
+    "actors": ["ricardo-gabaldon"],
     "category": "general",
     "type": "warning",
     "verified": false,
@@ -496,11 +426,7 @@
   {
     "id": "event-032",
     "title": "Mazón arriba sol a El Ventorro (sense escorta)",
-    "authors": [
-      "Jueza",
-      "Mazón",
-      "Romero"
-    ],
+    "actors": ["jueza", "carlos-mazon", "romero"],
     "category": "politics",
     "type": "info",
     "verified": true,
@@ -517,9 +443,7 @@
   {
     "id": "event-033",
     "title": "Salomé Pradas publica “emergència hidrològica” a Twitter",
-    "authors": [
-      "Pradas"
-    ],
+    "actors": ["salome-pradas"],
     "category": "emergency_response",
     "type": "info",
     "verified": true,
@@ -536,10 +460,7 @@
   {
     "id": "event-034",
     "title": "“La cosa es complica a Utiel” (Pradas → Cuenca)",
-    "authors": [
-      "Pradas",
-      "Cuenca"
-    ],
+    "actors": ["salome-pradas", "cuenca"],
     "category": "general",
     "type": "warning",
     "verified": true,
@@ -556,10 +477,7 @@
   {
     "id": "event-035",
     "title": "Xat intern Generalitat - “els barrancs estan a punt de col·lapsar”",
-    "authors": [
-      "Emilio Argüeso",
-      "Susana Camarero"
-    ],
+    "actors": ["emilio-argueso", "susana-camarero"],
     "category": "communication",
     "type": "warning",
     "verified": false,
@@ -570,10 +488,7 @@
   {
     "id": "event-036",
     "title": "Vilaplana arriba a El Ventorro",
-    "authors": [
-      "Vilaplana",
-      "Romero"
-    ],
+    "actors": ["vilaplana", "romero"],
     "category": "general",
     "type": "info",
     "verified": false,
@@ -584,10 +499,7 @@
   {
     "id": "event-037",
     "title": "Mazón hauria dinat amb Salvador Navarro (patronal)",
-    "authors": [
-      "Mazón",
-      "Salvador Navarro"
-    ],
+    "actors": ["carlos-mazon", "salvador-navarro"],
     "category": "politics",
     "type": "lie",
     "verified": false,
@@ -598,10 +510,7 @@
   {
     "id": "event-038",
     "title": "AEMET informa a Emergències: el pitjor vindrà a la vesprada",
-    "authors": [
-      "AEMET",
-      "Suárez"
-    ],
+    "actors": ["aemet", "suarez"],
     "category": "meteorology",
     "type": "warning",
     "verified": false,

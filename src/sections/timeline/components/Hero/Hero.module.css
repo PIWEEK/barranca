@@ -21,6 +21,7 @@
     background-image: url('./assets/senyera.jpg');
     background-repeat: no-repeat;
     background-position: 45% center;
+    background-size: cover;
     z-index: -1;
   }
 }
@@ -60,7 +61,7 @@
   }
 }
 
-@media (--motionOK) {
+@media (--motionOK) and (--md-n-above) {
   .hero::after {
     animation: zoomIn 15s ease-in-out infinite alternate;
   }

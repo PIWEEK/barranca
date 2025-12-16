@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useCallback } from 'react';
 
 import type { TimelineEventModel } from './models/timeline.model';
 import timelineData from './data/timeline.json' assert { type: 'json' };
@@ -12,6 +12,12 @@ import HeroComponent from './components/Hero/Hero';
 export default function TimelineComponent() {
   const firstDate = new Date(timelineData[0].time);
   const [currentDate, setCurrentDate] = useState(firstDate);
+
+  const updateEventsDate = useCallback((dateString: string) => {
+    const dateObj = new Date(dateString);
+    setCurrentDate(dateObj);
+  }, []);
+
   return (
     <div className={styles.timeline}>
       <HeroComponent />
@@ -19,7 +25,7 @@ export default function TimelineComponent() {
         <TimerComponent date={currentDate} />
         <div>
           {timelineData.map((event: TimelineEventModel) => (
-            <EventComponent event={event} key={event.id} />
+            <EventComponent event={event} onVisible={updateEventsDate} key={event.id} />
           ))}
         </div>
       </div>

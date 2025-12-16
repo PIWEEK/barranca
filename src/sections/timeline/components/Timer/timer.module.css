@@ -1,0 +1,25 @@
+.timer {
+  inline-size: fit-content;
+  position: sticky;
+  inset-block-start: 2.5rem;
+  inset-inline-end: 2.5rem;
+  margin-inline-start: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  gap: 0.25rem;
+  color: var(--red-6);
+}
+
+.date {
+  font-size: 1.1rem;
+}
+
+.time {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.warning {
+  color: var(--red-6);
+}

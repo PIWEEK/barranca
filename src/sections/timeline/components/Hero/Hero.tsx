@@ -3,9 +3,9 @@ import styles from './Hero.module.css';
 export default function HeroComponent() {
   return (
     <main className={styles.hero}>
-      <div className="absolute bottom-1/8 start-1/8 text-white max-w-3/4 md:max-w-lg">
-        <h1 className="text-5xl font-bold font-title">La barrancà</h1>
-        <div className="ps-4 border-s border-s-white mt-2">
+      <div className={styles.intro}>
+        <h1 className={styles.title}>La barrancà</h1>
+        <div className={styles.description}>
           <p>
             A finals d'octubre de 2024, una DANA va provocar una pluja torrencial que va deixar{' '}
             <strong>229 morts</strong>.

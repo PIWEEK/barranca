@@ -15,7 +15,7 @@ export default function TimelineComponent() {
   return (
     <div className={styles.timeline}>
       <HeroComponent />
-      <div className="min-h-screen relative bg-slate-900 ">
+      <div className={styles['events-wrapper']}>
         <TimerComponent date={currentDate} />
         <div>
           {timelineData.map((event: TimelineEventModel) => (

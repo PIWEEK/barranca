@@ -4,3 +4,8 @@
   scroll-snap-type: y mandatory; /* y‑axis snapping, mandatory = always snap */
   scroll-behavior: smooth; /* nice easing when you click nav links */
 }
+
+.events-wrapper {
+  min-block-size: 100dvh;
+  position: relative;
+}

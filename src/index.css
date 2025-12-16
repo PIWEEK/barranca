@@ -1,11 +1,16 @@
+@import 'open-props/normalize';
+@import 'open-props/gradients';
+@import 'open-props/fonts';
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  font-family: var(--font-rounded-sans);
+  line-height: var(--font-lineheight-1);
+  font-weight: var(--font-weight-4);
+  font-size: var(--font-size-1);
 
   color-scheme: only dark;
   color: rgba(255, 255, 255, 1);
-  background-color: #242424;
+  background-image: var(--gradient-8);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -13,9 +18,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-body {
-  font-family: 'Noto Sans Display', sans-serif;
+:where(h1, h2, h3, h4, h5, h6) {
+  font-family: var(--font-neo-grotesque);
 }
+
 /* 
 a {
   font-weight: 500;

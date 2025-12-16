@@ -1,8 +1,7 @@
-interface DateProps {
-  date: Date | string;
-}
+import type DateProps from './timer.model';
+import styles from './timer.module.css';
 
-export default function TimerComponent({ date }: DateProps) {
+export default function TimerComponent({ date, warning = false }: DateProps) {
   const formatDate = (): string => {
     const dateObj = typeof date === 'string' ? new Date(date) : date;
 
@@ -23,9 +22,9 @@ export default function TimerComponent({ date }: DateProps) {
   };
 
   return (
-    <aside className="w-max sticky top-10 end-10 ms-auto text-end pt-4 text-xl flex flex-col md:justify-end">
-      <span>{formatDate()}</span>
-      <span>{formatTime()}</span>
+    <aside className={styles.timer}>
+      <span className={styles.date}>{formatDate()}</span>
+      <span className={styles.time + (warning ? ` ${styles.warning}` : '')}>{formatTime()}</span>
     </aside>
   );
 }

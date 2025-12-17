@@ -1,3 +1,6 @@
+@import 'open-props/sizes';
+@import 'open-props/media';
+
 .timer {
   inline-size: fit-content;
   position: sticky;
@@ -6,20 +9,20 @@
   margin-inline-start: auto;
   display: flex;
   flex-direction: column;
-  text-align: end;
-  gap: 0.25rem;
+  text-align: start;
+  gap: var(--size-1);
   overflow: hidden;
 }
 
 .date {
-  font-size: 1.1rem;
-  display: block;
+  font-size: var(--font-size-3);
+  display: var(--font-weight-4);
   overflow: hidden;
 }
 
 .time {
-  font-size: 1.5rem;
-  font-weight: bold;
+  font-size: var(--font-size-4);
+  font-weight: var(--font-weight-8);
   display: block;
   overflow: hidden;
 }
@@ -30,4 +33,11 @@
 
 .warning {
   color: var(--red-6);
+}
+
+@media (--md-n-above) {
+  .timer {
+    inset-block-start: calc(50% - 2rem);
+    inset-inline-end: var(--size-8);
+  }
 }

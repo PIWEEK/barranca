@@ -3,13 +3,13 @@
 @import 'open-props/fonts';
 
 :root {
-  font-family: var(--font-rounded-sans);
+  font-family: var(--font-humanist);
   line-height: var(--font-lineheight-1);
   font-weight: var(--font-weight-4);
   font-size: var(--font-size-1);
 
   color-scheme: only dark;
-  color: rgba(255, 255, 255, 1);
+  color: var(--gray-0);
   background-image: var(--gradient-8);
 
   font-synthesis: none;

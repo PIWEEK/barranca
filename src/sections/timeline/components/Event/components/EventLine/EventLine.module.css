@@ -1,0 +1,37 @@
+@import 'open-props/media';
+
+:root {
+  --line-size: 4px;
+}
+
+.event-line {
+  display: none;
+}
+
+@media (--md-n-above) {
+  .event-line {
+    position: absolute;
+    pointer-events: none;
+    right: 270px;
+    width: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .line {
+    inline-size: var(--line-size);
+    block-size: 100dvh;
+    background-color: var(--gray-2);
+    opacity: 0.5;
+  }
+
+  .marker {
+    position: absolute;
+    inline-size: 1.5rem;
+    block-size: 1.5rem;
+    background-color: var(--gray-9);
+    border: var(--line-size) solid var(--gray-2);
+    border-radius: 50%;
+  }
+}

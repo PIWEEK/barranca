@@ -1,11 +1,11 @@
 export type EventCategory = 'general' | 'technical' | 'social' | 'environmental' | 'political';
 export type EventType = 'info' | 'warning' | 'alert' | 'update';
 
-export interface TimelineEventModel {
+export default interface TimelineEventModel {
   id: string;
   title: string;
   content?: string;
-  authors?: string[];
+  actors: string[];
   category: string;
   verified: boolean;
   references?: Array<{

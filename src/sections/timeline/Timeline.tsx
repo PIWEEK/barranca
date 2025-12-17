@@ -1,7 +1,9 @@
 import { useState, useCallback } from 'react';
 
-import type { TimelineEventModel } from './models/timeline.model';
+import type TimelineEventModel from './models/timeline.model';
+import type ActorModel from './models/actors.model';
 import timelineData from './data/timeline.json' assert { type: 'json' };
+import actorsData from './data/actors.json' assert { type: 'json' };
 
 import TimerComponent from './components/Timer/timer';
 import EventComponent from './components/Event/event';
@@ -23,9 +25,15 @@ export default function TimelineComponent() {
       <HeroComponent />
       <div className={styles['events-wrapper']}>
         <TimerComponent date={currentDate} />
+
         <div>
           {timelineData.map((event: TimelineEventModel) => (
-            <EventComponent event={event} onVisible={updateEventsDate} key={event.id} />
+            <EventComponent
+              event={event}
+              actors={actorsData as ActorModel[]}
+              onVisible={updateEventsDate}
+              key={event.id}
+            />
           ))}
         </div>
       </div>

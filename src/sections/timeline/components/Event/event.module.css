@@ -1,3 +1,6 @@
+@import 'open-props/sizes';
+@import 'open-props/borders';
+
 .event {
   scroll-snap-align: start;
   scroll-snap-stop: always;
@@ -6,33 +9,4 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.content {
-  /* Fix the content, so it doesn't scroll with the section */
-  overflow: hidden;
-  position: fixed;
-  inset: 0;
-
-  /* Animate the content based on the section scrolling */
-  --contrast: 4;
-  --blur: 0.5rem;
-
-  animation: blink ease-in-out both;
-  animation-timeline: --section;
-}
-
-@keyframes blink {
-  0%,
-  100% {
-    filter: blur(var(--blur)) contrast(var(--contrast));
-    opacity: 0;
-    visibility: hidden;
-  }
-
-  50% {
-    filter: blur(0) contrast(1);
-    opacity: 1;
-    visibility: visible;
-  }
 }

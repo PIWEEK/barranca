@@ -1,0 +1,19 @@
+content {
+  overflow: hidden;
+  position: fixed;
+  inset: 0;
+}
+
+.actor {
+  display: flex;
+  align-items: center;
+  gap: var(--size-2);
+  margin-bottom: var(--size-3);
+}
+
+.avatar {
+  inline-size: var(--size-8);
+  block-size: var(--size-8);
+  border-radius: var(--radius-5);
+  object-fit: cover;
+}

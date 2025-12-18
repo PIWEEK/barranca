@@ -11,7 +11,6 @@
 
   background-color: #670404;
   background-image: linear-gradient(to top, var(--gray-0), var(--gray-12)), var(--noise-4);
-  filter: var(--noise-filter-2);
   background-size: cover, cover;
   background-blend-mode: multiply;
 }

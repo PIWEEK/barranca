@@ -26,6 +26,13 @@
     opacity: 0.5;
   }
 
+  .first {
+    & .line {
+      background-color: none;
+      background: linear-gradient(to bottom, transparent, transparent 10%, var(--gray-2) 35%);
+    }
+  }
+
   .marker {
     position: absolute;
     inline-size: 1.5rem;

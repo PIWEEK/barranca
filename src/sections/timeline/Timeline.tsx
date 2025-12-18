@@ -2,17 +2,20 @@ import { useState, useCallback } from 'react';
 
 import type TimelineEventModel from './models/timeline.model';
 import type ActorModel from './models/actors.model';
-import timelineData from './data/timeline.json' assert { type: 'json' };
-import actorsData from './data/actors.json' assert { type: 'json' };
 
 import TimerComponent from './components/Timer/timer';
 import EventComponent from './components/Event/event';
 
 import styles from './Timeline.module.css';
 import HeroComponent from './components/Hero/Hero';
+import { useTimeline } from '../../hooks/useTimeline';
+
+// Cast the JSON data to the correct type
 
 export default function TimelineComponent() {
-  const firstDate = new Date(timelineData[0].time);
+  const { events, actors } = useTimeline();
+
+  const firstDate = new Date(events[0].time);
   const [currentDate, setCurrentDate] = useState(firstDate);
 
   const updateEventsDate = useCallback((dateString: string) => {
@@ -27,10 +30,10 @@ export default function TimelineComponent() {
         <TimerComponent date={currentDate} />
 
         <div>
-          {timelineData.map((event: TimelineEventModel) => (
+          {events.map((event: TimelineEventModel) => (
             <EventComponent
               event={event}
-              actors={actorsData as ActorModel[]}
+              actors={actors as ActorModel[]}
               onVisible={updateEventsDate}
               key={event.id}
             />

@@ -1,0 +1,27 @@
+@import 'open-props/sizes';
+@import 'open-props/borders';
+
+.avatar {
+  inline-size: var(--size-6);
+  block-size: var(--size-6);
+  border-radius: var(--radius-5);
+  object-fit: cover;
+}
+
+.size-m {
+  inline-size: var(--size-6);
+  block-size: var(--size-6);
+}
+
+.size-l {
+  inline-size: var(--size-10);
+  block-size: var(--size-10);
+}
+
+.shape-rounded {
+  border-radius: var(--radius-5);
+}
+
+.shape-square {
+  border-radius: var(--radius-1);
+}

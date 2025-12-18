@@ -1,0 +1,68 @@
+@import 'open-props/media';
+
+.dialog {
+  inline-size: 90%;
+  block-size: 50dvh;
+  position: relative;
+  &::backdrop {
+    background-image: var(--gradient-16);
+    opacity: 0.75;
+  }
+}
+
+.closeButton {
+  display: none;
+}
+
+.wrapper {
+  padding: var(--size-4);
+}
+
+.tabs {
+  display: flex;
+  gap: var(--size-4);
+}
+
+.data {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.position {
+  font-weight: var(--font-weight-6);
+  font-size: var(--font-size-3);
+}
+
+.eventList {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-3);
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-block-start: var(--size-4);
+}
+
+@media (--md-n-above) {
+  .dialog {
+    inline-size: 50%;
+    block-size: 50dvh;
+  }
+  .closeButton {
+    display: flex;
+    position: absolute;
+    top: var(--size-4);
+    right: var(--size-4);
+    background: none;
+    border: none;
+    color: var(--gray-9);
+    font-size: var(--size-7);
+    cursor: pointer;
+    inline-size: fit-content;
+    block-size: 1ex;
+    justify-content: center;
+    align-items: center;
+  }
+}

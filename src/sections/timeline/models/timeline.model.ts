@@ -1,5 +1,12 @@
 export type EventCategory = 'general' | 'technical' | 'social' | 'environmental' | 'political';
 export type EventType = 'info' | 'warning' | 'alert' | 'update';
+export type ReferenceType = 'article' | 'social' | 'video' | 'audio' | 'other';
+
+export interface TimelineEventReferenceModel {
+  url: string;
+  source?: string;
+  type?: ReferenceType;
+}
 
 export default interface TimelineEventModel {
   id: string;
@@ -8,11 +15,8 @@ export default interface TimelineEventModel {
   actors: string[];
   category: string;
   verified: boolean;
-  references?: Array<{
-    url: string;
-    source?: string;
-    type?: string;
-  }>;
+  image?: string;
+  references?: TimelineEventReferenceModel[];
   time: string;
   type: string;
 }

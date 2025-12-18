@@ -10,7 +10,8 @@ export default function EventComponent({ event, actors, onVisible }: EventCompon
   const isVisible = useOnScreen(ref, { threshold: 0.5 });
 
   const actorsData = actors.filter((actor) => event.actors.includes(actor.id));
-  console.log('Event Actors:', actorsData);
+
+  const isFirstEvent = event.id === 'evt-kjqji9q1';
 
   useEffect(() => {
     if (isVisible && onVisible) {
@@ -19,18 +20,9 @@ export default function EventComponent({ event, actors, onVisible }: EventCompon
   }, [isVisible, onVisible, event.time]);
 
   return (
-    <article ref={ref} className={styles.event}>
-      <EventLineComponent />
-      <div className="content">
-        <div className="actors">
-          {actorsData.map((actor) => (
-            <EventCardComponent key={actor.id} actor={actor} />
-          ))}
-        </div>
-        <p>{event.time} </p>
-        <h2>{event.title}</h2>
-        <p>{event.content}</p>
-      </div>
+    <article ref={ref} className={styles.event} id={event.id}>
+      <EventLineComponent isFirst={isFirstEvent} />
+      <EventCardComponent key={event.id} actors={actorsData} event={event} />
     </article>
   );
 }

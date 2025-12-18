@@ -3,9 +3,9 @@
 @import 'open-props/fonts';
 
 :root {
-  font-family: var(--font-humanist);
+  /* font-family: var(--font-humanist); */
   line-height: var(--font-lineheight-1);
-  font-weight: var(--font-weight-4);
+  /* font-weight: var(--font-weight-4); */
   font-size: var(--font-size-1);
 
   color-scheme: only dark;

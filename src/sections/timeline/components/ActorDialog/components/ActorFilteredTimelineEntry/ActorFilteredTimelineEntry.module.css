@@ -1,0 +1,43 @@
+@import 'open-props/media';
+
+.container {
+  display: flex;
+  align-items: center;
+  &:hover {
+    & .entryData {
+      text-decoration: underline;
+    }
+  }
+}
+
+.entryData {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.navigate {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  width: 100%;
+}
+
+.icon {
+  display: none;
+  margin-left: auto;
+}
+
+@media (--md-n-above) {
+  .container {
+    &:hover {
+      & .icon {
+        display: inline-flex;
+        cursor: pointer;
+      }
+    }
+  }
+}

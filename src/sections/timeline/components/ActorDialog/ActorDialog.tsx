@@ -3,19 +3,29 @@ import type ActorModel from '../../models/actors.model';
 import styles from './ActorDialog.module.css';
 import AvatarComponent from '../Event/components/EventCard/components/ActorAvatar/components/Avatar/Avatar';
 import { useTimeline } from '../../../../hooks/useTimeline';
+import type TimelineEventModel from '../../models/timeline.model';
+import { FiCrosshair } from 'react-icons/fi';
+import ActorFilteredTimelineEntry from './components/ActorFilteredTimelineEntry/ActorFilteredTimelineEntry';
 
 interface ActorDialogProps {
   actor: ActorModel;
+  event?: TimelineEventModel;
 }
 
 type visibleTabType = 'data' | 'timeline';
 
-const ActorDialog = forwardRef<HTMLDialogElement, ActorDialogProps>(({ actor }, ref) => {
+const ActorDialog = forwardRef<HTMLDialogElement, ActorDialogProps>(({ actor, event }, ref) => {
   const dialogRef = ref as React.RefObject<HTMLDialogElement | null>;
   const [visibleTab, setVisibleTab] = useState<visibleTabType>('data');
   const { getEventsByActorId } = useTimeline();
 
   const actorEvents = getEventsByActorId(actor.id);
+  const actorEventsFiltered = actorEvents
+    ? actorEvents.filter((e) => e.id !== event?.id)
+    : actorEvents;
+
+  console.log('event', event?.title);
+  console.log('actorEventsFiltered', actorEventsFiltered);
 
   const closeDialog = () => {
     if (dialogRef.current) {
@@ -24,7 +34,6 @@ const ActorDialog = forwardRef<HTMLDialogElement, ActorDialogProps>(({ actor }, 
   };
 
   const navigateToEvent = (id: string) => {
-    // Implement navigation logic here
     closeDialog();
     scrollToEvent(id);
   };
@@ -47,11 +56,13 @@ const ActorDialog = forwardRef<HTMLDialogElement, ActorDialogProps>(({ actor }, 
       </button>
 
       <div className={styles.wrapper}>
-        <div className={styles.header}>
-          <button type="button" className={styles.tabSwitcher} onClick={toggleTab}>
-            ToggleTab
-          </button>
-        </div>
+        {actorEventsFiltered && actorEventsFiltered.length > 0 && (
+          <div className={styles.header}>
+            <button type="button" className={styles.tabSwitcher} onClick={toggleTab}>
+              ToggleTab
+            </button>
+          </div>
+        )}
         <div className={styles.tabs}>
           {visibleTab === 'data' && (
             <div className={styles.data}>
@@ -62,16 +73,13 @@ const ActorDialog = forwardRef<HTMLDialogElement, ActorDialogProps>(({ actor }, 
               {/* <div>Participava al CECOPI? {actor.cecopi ? 'Sí' : 'No'}</div> */}
             </div>
           )}
-          {visibleTab === 'timeline' && (
+          {actorEventsFiltered && actorEventsFiltered.length > 0 && visibleTab === 'timeline' && (
             <div className={styles.timeline}>
-              <h3>Events en els que participa {actor.name}:</h3>
+              <h3>Events de {actor.name}</h3>
               <ul className={styles.eventList}>
-                {actorEvents.map((event) => (
-                  <li key={event.id}>
-                    <strong>{new Date(event.time).toLocaleDateString()}</strong>: {event.title}
-                    <button type="button" onClick={() => navigateToEvent(event.id)}>
-                      Navigate
-                    </button>
+                {actorEventsFiltered.map((event) => (
+                  <li className={styles.eventListItem} key={event.id}>
+                    <ActorFilteredTimelineEntry event={event} onNavigateToEvent={navigateToEvent} />
                   </li>
                 ))}
               </ul>

@@ -5,7 +5,7 @@ import AvatarComponent from './components/Avatar/Avatar';
 import type ActorAvatarProps from './ActorAvatar.model';
 import ActorDialog from '../../../../../ActorDialog/ActorDialog';
 
-export default function ActorAvatarComponent({ actor }: ActorAvatarProps) {
+export default function ActorAvatarComponent({ actor, event }: ActorAvatarProps) {
   const dialogRef = useRef<HTMLDialogElement>(null);
 
   const openDialog = () => {
@@ -18,7 +18,7 @@ export default function ActorAvatarComponent({ actor }: ActorAvatarProps) {
         <AvatarComponent actor={actor} />
         <span className={styles.name}>{actor.name}</span>
       </button>
-      <ActorDialog ref={dialogRef} actor={actor} />
+      <ActorDialog ref={dialogRef} actor={actor} event={event} />
     </div>
   );
 }

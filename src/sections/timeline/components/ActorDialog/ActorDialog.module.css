@@ -1,38 +1,88 @@
 @import 'open-props/media';
 
 .dialog {
-  inline-size: 90%;
-  block-size: 50dvh;
-  position: relative;
+  margin-block: 0;
+  margin-inline-end: 0;
+  padding: 0;
+  inline-size: 80%;
+  block-size: 100dvh;
+  border-radius: 0;
+  position: fixed;
+  inset-inline-end: 0;
+  inset-block: 0;
+
   &::backdrop {
     background-image: var(--gradient-16);
-    opacity: 0.75;
+    opacity: 0.6;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .dialog {
+    transform: translateX(100%);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    &[open] {
+      transform: translateX(0);
+
+      @starting-style {
+        transform: translateX(100%);
+      }
+    }
   }
 }
 
 .closeButton {
-  display: none;
+  display: flex;
+  position: absolute;
+  top: var(--size-4);
+  right: var(--size-4);
+  background: none;
+  border: none;
+  color: var(--gray-9);
+  font-size: var(--size-7);
+  cursor: pointer;
+  inline-size: fit-content;
+  block-size: 1ex;
+  justify-content: center;
+  align-items: center;
 }
 
-.data {
-  overflow-y: auto;
+.wrapper {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: var(--size-4);
+  block-size: 100%;
+  padding: var(--size-4);
+  padding-block-start: var(--size-8);
+}
+
+.data-wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--size-3);
 }
 
 .position {
   font-weight: var(--font-weight-6);
   font-size: var(--font-size-3);
 }
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-3);
+  min-height: 0;
+}
 
 .eventList {
-  flex: 1;
   overflow-y: auto;
   display: flex;
   flex-direction: column;
   gap: var(--size-3);
   list-style-type: none;
-  margin-inline-start: var(--size-4);
-  padding-inline-start: var(--size-4);
-  margin-block-start: var(--size-4);
+  margin-inline-start: var(--size-2);
+  padding-inline-start: var(--size-3);
+  margin-block-start: var(--size-2);
   border-inline-start: var(--border-size-1) solid var(--gray-5);
 }
 
@@ -40,6 +90,8 @@
   display: block;
   max-width: 100%;
   position: relative;
+  padding-inline: 0;
+  padding-inline-end: var(--size-2);
   &::before {
     content: '';
     display: inline-block;
@@ -48,29 +100,13 @@
     background: var(--gray-5);
     border-radius: var(--radius-round);
     position: absolute;
-    left: calc(-1 * var(--size-5));
+    left: calc(-1 * var(--size-3) - var(--border-size-1) - var(--size-2) / 2);
     top: calc(50% - (var(--size-2) / 2));
   }
 }
 
 @media (--md-n-above) {
   .dialog {
-    inline-size: 50%;
-    block-size: 50dvh;
-  }
-  .closeButton {
-    display: flex;
-    position: absolute;
-    top: var(--size-4);
-    right: var(--size-4);
-    background: none;
-    border: none;
-    color: var(--gray-9);
-    font-size: var(--size-7);
-    cursor: pointer;
-    inline-size: fit-content;
-    block-size: 1ex;
-    justify-content: center;
-    align-items: center;
+    inline-size: 30%;
   }
 }

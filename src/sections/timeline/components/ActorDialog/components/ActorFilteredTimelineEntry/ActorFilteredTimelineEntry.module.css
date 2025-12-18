@@ -1,8 +1,6 @@
 @import 'open-props/media';
 
 .container {
-  display: flex;
-  align-items: center;
   &:hover {
     & .entryData {
       text-decoration: underline;
@@ -22,7 +20,6 @@
   border: none;
   cursor: pointer;
   padding: 0;
-  display: flex;
   width: 100%;
 }
 
@@ -39,5 +36,9 @@
         cursor: pointer;
       }
     }
+  }
+  .navigate {
+    display: grid;
+    grid-template-columns: 1fr 30px;
   }
 }

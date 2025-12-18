@@ -1,7 +1,7 @@
 import { forwardRef } from 'react';
 import type ActorModel from '../../models/actors.model';
 import styles from './ActorDialog.module.css';
-import AvatarComponent from '../Event/components/EventCard/components/ActorAvatar/components/Avatar/Avatar';
+import AvatarComponent from '../../../../components/Avatar/Avatar';
 import { useTimeline } from '../../../../hooks/useTimeline';
 import type TimelineEventModel from '../../models/timeline.model';
 import ActorFilteredTimelineEntry from './components/ActorFilteredTimelineEntry/ActorFilteredTimelineEntry';

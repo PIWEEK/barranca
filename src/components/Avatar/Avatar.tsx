@@ -1,4 +1,4 @@
-import type ActorModel from '../../../../../../../../models/actors.model';
+import type ActorModel from '../../sections/timeline/models/actors.model';
 import styles from './Avatar.module.css';
 
 export default function AvatarComponent({

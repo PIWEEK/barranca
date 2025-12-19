@@ -10,6 +10,7 @@
   position: fixed;
   inset-inline-end: 0;
   inset-block: 0;
+  color: var(--gray-9);
 
   &::backdrop {
     background-image: var(--gradient-16);

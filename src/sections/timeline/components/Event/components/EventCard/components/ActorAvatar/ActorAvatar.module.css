@@ -23,6 +23,6 @@
   border-radius: var(--radius-2);
   padding: var(--size-2);
   &:hover {
-    background-color: var(--brown-3);
+    background-color: var(--gray-8);
   }
 }

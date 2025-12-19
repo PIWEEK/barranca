@@ -31,6 +31,16 @@ export default function TimerComponent({ date, warning = false }: DateProps) {
     })
   );
 
+  const [remainingDays, setRemainingDays] = useState<number | null>(null);
+
+  const eventDate = new Date('2024-10-29T00:00:00');
+  const remainingTimeinDaysToEvent = Math.floor(
+    (eventDate.getTime() - parsedDate.getTime()) / (1000 * 60 * 60 * 24)
+  );
+  if (eventDate.toISOString() < eventDate.toISOString()) {
+    setRemainingDays(remainingTimeinDaysToEvent);
+  }
+
   // Render text as individual character spans
   const renderCharacters = useCallback((text: string) => {
     return text.split('').map((char, index) => (
@@ -42,6 +52,8 @@ export default function TimerComponent({ date, warning = false }: DateProps) {
 
   useEffect(() => {
     const currentDateStr = parsedDate.toISOString();
+
+    // console.log(`Event in ${remainingTimeinDaysToEvent} days`);
 
     // Skip animation on first render
     if (isFirstRender.current) {
@@ -124,6 +136,15 @@ export default function TimerComponent({ date, warning = false }: DateProps) {
       <span ref={timeRef} className={`${styles.time} ${warning ? styles.warning : ''}`}>
         {renderCharacters(displayedTime)}
       </span>
+      {remainingTimeinDaysToEvent !== null && remainingTimeinDaysToEvent > 0 && (
+        <span className={styles.remaining}>
+          {renderCharacters(
+            `${
+              remainingTimeinDaysToEvent === 1 ? 'Falta' : 'Falten'
+            } ${remainingTimeinDaysToEvent} ${remainingTimeinDaysToEvent === 1 ? 'dia' : 'dies'}`
+          )}
+        </span>
+      )}
     </aside>
   );
 }

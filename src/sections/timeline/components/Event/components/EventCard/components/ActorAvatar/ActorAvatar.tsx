@@ -1,9 +1,9 @@
 import { useRef } from 'react';
 
 import styles from './ActorAvatar.module.css';
-import AvatarComponent from '@/components/Avatar/Avatar';
 import type ActorAvatarProps from './ActorAvatar.model';
 import ActorDialog from '../../../../../ActorDialog/ActorDialog';
+import AvatarComponent from '../../../../../../../../components/Avatar/Avatar';
 
 export default function ActorAvatarComponent({ actor, event }: ActorAvatarProps) {
   const dialogRef = useRef<HTMLDialogElement>(null);

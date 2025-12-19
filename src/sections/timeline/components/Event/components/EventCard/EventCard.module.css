@@ -45,6 +45,45 @@
   line-height: 1.1;
 }
 
+.hint {
+  font-size: var(--font-size-2);
+  padding: var(--size-2);
+  display: flex;
+  align-items: flex-start;
+  gap: var(--size-2);
+  /* border-inline-start: var(--border-size-1) solid currentColor; */
+}
+
+.hint-info {
+  .hint-icon {
+    color: var(--blue-9);
+  }
+}
+
+.hint-warning {
+  .hint-icon {
+    color: var(--yellow-9);
+  }
+}
+
+.hint-error {
+  .hint-icon {
+    color: var(--red-9);
+  }
+}
+
+.hint-question {
+  .hint-icon {
+    color: var(--red-9);
+  }
+}
+
+.hint-icon {
+  inline-size: var(--size-6);
+  block-size: var(--size-6);
+  flex-shrink: 0;
+}
+
 .references {
   background: none;
   padding: 0;

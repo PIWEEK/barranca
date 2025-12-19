@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 
 import styles from './ActorAvatar.module.css';
-import AvatarComponent from '../../../../../../../../components/Avatar/Avatar';
+import AvatarComponent from '@/components/Avatar/Avatar';
 import type ActorAvatarProps from './ActorAvatar.model';
 import ActorDialog from '../../../../../ActorDialog/ActorDialog';
 

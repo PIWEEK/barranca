@@ -213,7 +213,8 @@
     "references": [
       {
         "url": "https://climatica.coop/cronologia-desastre-respuesta-dana/",
-        "source": "Cronología de un desastre - Climática",
+        "title": "Cronología de un desastre",
+        "source": "Climática",
         "type": "article"
       }
     ]
@@ -263,6 +264,12 @@
       "content": "Mazón publicarà este missatge a Twitter a les 13:14, pero a la nit el borrarà."
     },
     "references": [
+      {
+        "url": "mazon_comparece.mp4",
+        "type": "video",
+        "source": "El País",
+        "title": "El vídeo en el que el presidente valenciano auguró la disminución del temporal y después borró de su Twitter"
+      },
       {
         "url": "https://elpais.com/videos/2024/10/31/el-video-en-el-presidente-valenciano-auguro-la-disminucion-del-temporal-y-que-borro-de-su-twitter.html?utm_source=chatgpt.com",
         "title": "El vídeo en el que el presidente valenciano auguró la disminución del temporal y después borró de su Twitter",
@@ -368,13 +375,7 @@
       "content": "Hi havia dos alertes hidrològiques actives en este moment: 50 minuts abans en el Poio i 75 minuts abans en el Magre."
     },
     "actors": ["carlos-mazon"],
-    "references": [
-      {
-        "url": "https://www.dailymotion.com/video/x98akjm",
-        "source": "El Diario",
-        "type": "video"
-      }
-    ]
+    "references": []
   },
   {
     "id": "evt-oqcwnjrd",
@@ -391,7 +392,7 @@
         "url": "https://www.eldiario.es/escolar/mazon-miente-final-admitir-gran-error_132_12736500.html",
         "title": "Mazón miente hasta el final sin admitir su gran error",
         "source": "El Diario",
-        "type": "video"
+        "type": "article"
       }
     ]
   },
@@ -468,6 +469,12 @@
     },
     "actors": ["ricardo-gabaldon"],
     "references": [
+      {
+        "url": "magro_utiel.mp4",
+        "type": "video",
+        "source": "À Punt",
+        "title": "El riu Magre es desborda a Utiel i nega carrers del municipi"
+      },
       {
         "url": "https://www.diarilaveu.cat/societat/video-el-riu-magre-es-desborda-a-utiel-i-nega-carrers-del-municipi-559651/",
         "title": "El riu Magre es desborda a Utiel i nega carrers del municipi",
